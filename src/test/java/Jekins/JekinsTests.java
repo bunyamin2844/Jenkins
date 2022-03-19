@@ -34,10 +34,13 @@ public class JekinsTests {
         System.out.println("actualDAta = " + actualDAta);
         Map<String ,Object> bookingdates= (Map)actualDAta.get("bookingdates");
 
-        assertEquals("Jim",actualDAta.get("firstname"));
-        assertEquals("Jackson",actualDAta.get("lastname"));
-        assertEquals("982",actualDAta.get("totalprice"));
-        //
+        assertEquals("Jim", actualDAta.get("firstname"));
+        assertEquals("Ericsson", actualDAta.get("lastname"));
+        assertEquals(126, actualDAta.get("totalprice"));
+        assertEquals(true, actualDAta.get("depositpaid"));
+
+        assertEquals("2021-10-21", bookingdates.get("checkin"));
+        assertEquals("2021-11-06", bookingdates.get("checkout"));
 
 
 
