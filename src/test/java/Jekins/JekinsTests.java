@@ -37,6 +37,7 @@ public class JekinsTests {
         assertEquals("Jim",actualDAta.get("firstname"));
         assertEquals("Jackson",actualDAta.get("lastname"));
         assertEquals("982",actualDAta.get("totalprice"));
+        //
 
 
 
